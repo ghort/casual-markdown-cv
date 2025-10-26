@@ -5,27 +5,29 @@
 <script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
 <style>
   body { line-height:1.5; margin:auto; padding:3px; max-width:1024px; display:none; FONT-FAMILY:"SEGOE UI",ARIAL }
-  h1  { font-size:200%; padding:16px; border:1px solid lightgrey; COLOR:WHITE; BACKGROUND: teal }
-  h2  { border-bottom:1px solid grey; padding:2px; COLOR:TEAL }
-  h3  { COLOR:#FF7F50 }
+  h1 { font-size:120%; padding:16px; COLOR:WHITE }
+  h2 { border-bottom:1px solid grey; padding:2px; COLOR:TEAL; clear: both }
+  h3 { COLOR:#FF7F50 }
+  .col2 { float:left;width:50% }
+  .col2 ul {margin-top: 0;}
+
 </style>
 <body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';
               document.getElementById('qrcode').src='https://chart.googleapis.com/chart?cht=qr&chs=177x177&chl='+location.href" >
 <!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
 
-<img style="float:right;border-radius:50%;width:70px;padding:6px" src="Thomas_Bernard.png" />
+<div style="background-color: teal;height: 82px;">
+<img style="float:right;border-radius:50%;width:70px;padding:6px" src="/data/Thomas_Bernard.png" />
 
 <span style="float:right;padding:6px;color:white">
   tbernard.02@gmail.com <br> mobile: 06 25 35 05 93 <br>39 ans, pacsé, 2 enfants
 </span>
 
-# Thomas BERNARD - Ingénieur DevOps et Cloud
-
+<div style="float:left;font-weight: bold; line-height: 82px; padding-left: 12px; COLOR:WHITE"> Thomas BERNARD - Ingénieur Devops et Cloud</div>
+</div>
 ## Présenation
 
-Expert Linux et fervent défenseur de l’open source, j'ai une solide expérience dans la conception, le déploiement et la maintenance de larges infrastructures.
-
-Mon approche DevOps repose sur une grande experience technique et un sens du contact humain afin de créer des systèmes robustes, performants et sécurisés tout en restant évolutifs.
+Expert Linux et fervent défenseur de l’open source, j'ai une solide expérience dans la conception de larges infrastructures. J'utilise ma grande experience technique et mon sens du contact humain dans une démarche devops afin de créer des systèmes robustes et performants.
 
 ## Expériences professionnelles
 
@@ -34,29 +36,29 @@ Mon approche DevOps repose sur une grande experience technique et un sens du con
 
  __Atol Conseils et Développement (Gevrey-Chambertin)__
 
-Embauché pour créer l’activité ‘hosting’ dans le but d’héberger les applications développées par l’entreprise à destination de nos clients.
+Co-créateur de l’activité ‘hosting’ qui a pour but d’héberger les applications développées par l’entreprise à destination de nos clients.
 D’une cinquantaine de serveurs il y a 12 ans, l’activité héberge aujourd’hui plus de 1600 machines virtuelles réparti sur 3 clouds.
 
-**Concéption, gestion et mise à jour de nos trois clouds privés**
+**Concéption, gestion et mise à jour de clouds privés**
 
-* Basés sur les technologies Openstack et Ceph déployées sur sur plus de cinquante serveurs physiques dans différents datacenter.
-* Gestion quotidienne des clouds (mise à jour, maintenance, veille technologique, etc.)
+* Gestion d'une cinquantaine de serveurs physiques hébergés dans différents datacenter avec Openstack et Ceph
 * Déploiement des outils d'architecture nécessaire : supervision , sauvegarde, métrologie/telemetry, outils de gestion de parc
-* Rédaction des procédures internes, gestion des PRA, etc.
+* Rédaction des procédures internes, des PRA, etc.
 
 **Approche devops pour l'intégration et industrialisation des applications clientes**
 
+* Maintenance quotidienne de 1600 machines virtuelles dans une équipe de 6 personnes.
 * Utilisation massive de puppet et ansible pour l'industrialisation et le déploiement et docker pour le packaging des applications.
-* Colaboration étroite avec les équipes de développement (architecture, intégration, performance tuning, reporting, etc.)
+* Colaboration étroite (devops) avec les équipes de développement (architecture, intégration, performance tuning, reporting, etc.)
 
-En plus de mes activités principales, je suis également très impliqué dans la vie interne de l'entreprise en étant formateur docker et git depuis plusieurs années et en participant régulierement aux animations techniques de l'entreprise (podcast, presentation technique)
+Je suis également très impliqué dans la vie interne de l'entreprise en étant formateur docker et git depuis plusieurs années.
 
 <span style="float:right;font-weight:700">Jan 2013 - Jan 2014</span>
 ### Administrateur système et réseau
 
 __Metanext, SSII en mission chez SFR (Paris la défense)__
 
-* Gestion des plateformes WEB de pré-production et de production SFR. Parc constitué de 300 serveurs RHEL5 virtuels et physiques et de 20 hyperviseurs VMware.
+* Gestion des plateformes WEB SFR. Parc constitué de 300 serveurs RHEL5 et de 20 hyperviseurs VMware.
 * Industrialisation et gestion centralisée des configurations systèmes via Puppet, Foreman et Mcollective.
 
 <span style="float:right;font-weight:700">Oct 2008 - Jan 2013</span>
@@ -69,13 +71,12 @@ __Adelux (Asnière sur Seine)__
 * Exploitation du parc des clients externalisés Adelux (env. 100 serveurs), support N3 et gestion des évolutions.
 
 ## Compétence et technologie
-
-<div style="float:left">
+<div class='col2'>
 * Cloud / virtualisation: Openstack, Ceph, Docker
 * Gestion de parc: Puppet, ansible
 * Base de donnée: Postgresql, MySql/MariaDB, MongoDB
 </div>
-<div style="float:left">
+<div class='col2'>
 * Supervision: Ecosystème Nagios. Shinken, Centreon, Icinga
 * Métrologie: OpenTelemetry, Loki, Mimir, Tempo, Grafana, Graphite
 * Développement: python, bash
@@ -90,20 +91,6 @@ Dîplome de niveau III, obtenu au CESI d'Arcueil via un contrat d'apprentissage 
 
 ## Loisir
 
-<div style="float:left">
-__Sport__
-
-* Véritable passionné d'escalade
-* futsal / basket
-</div>
-<div style="float:left;margin-left:50px">
-__Mensuiserie et ébenisterie__
-
-* Création de meuble sur mesure (lit, table, commode, escalier, etc.)
-* Réalisation d'objets artistiques ou décoratifs
-</div>
-<div style="float:left">
-__Associatif__
-
-* Trésorier adjoint de l'association des parents d'élèves du village
-</div>
+* **Sport** : Passionné d'escalade, pratique le futsal et la course
+* **Menuiserie / Ébénisterie** : Création de meubles sur mesure et d'objets artistiques ou décoratifs
+* **Associatif**: Trésorier de l'association des parents d'élèves du village
